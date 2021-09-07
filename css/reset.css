@@ -1,0 +1,107 @@
+:root {
+    --color-brown: #d39d5d;
+    /*Màu chủ đạo của website*/
+    --color-brown-bold: #693A00;
+     /*Màu chủ dạo thứ 2*/
+    --color-text: #808080;
+    /*Màu chủ đạo của text*/
+    --color-text-2: #646464;
+    /*Màu chủ đạo của text thứ 2*/
+    --color-background-black: #23282A;
+    --container-width:1170px;
+    /*Chiều rộng container*/
+}
+
+/*Reset chung tất cả thành phần*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+outline: none;
+}
+
+/*Nhúng font*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+/*Thiết lập các thành phần dùng chung*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: var(--color-background-black);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    position: relative;
+    background: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-2);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+h1,
+h3 {
+    font-family: 'PlayfairDisplay';
+    padding: 15px 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    min-height: 1px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* --------------------------------------------------------- */
+.header__top::after,.header__top .header__top--left::after,
+.header__top .header__top--left ul.top__left--language::after,
+.header__top--right::after,
+.header__top .top__right--account-desire ul::after,
+.container::after, .header__main--Shopping-Cart::after,
+.main__Shopping--product ul li ul::after, .Shopping__product--totally::after,
+.header__main .col-menu::after, .header__main--menu::after,.button-view::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* -------------------------------------------------------*/
+
+/* -----------------------LEFT--------------------------- */
+.header__top .header__top--left,
+.header__top .header__top--left .top__left--msg,
+.header__top .header__top--left ul.top__left--language,
+.header__top .header__top--left ul.top__left--language>li
+.header__main .container .row .col
+{
+    float: left;
+}
+/* ---------------------------------------------------- */
+
+/* ------------------------RIGHT----------------------- */
+.header__top .header__top--right .top__right--account-desire,
+.header__top .header__top--right .top__right--search,
+.header__top .top__right--account-desire>ul>li {
+    float: left;
+}
+/* ----------------------------------------------------- */
