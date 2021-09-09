@@ -1,5 +1,5 @@
 /* Máy tính bảng loại to (Chiều ngang) */
-@media  (min-width: 768px){
+@media  (max-width: 768px){
     .container{
         width: 100%;
     }
