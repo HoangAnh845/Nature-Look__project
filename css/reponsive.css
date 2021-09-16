@@ -4,7 +4,11 @@
         width: 100%;
     }
     .header__top .header__top--left{
-        max-width: 50%;
+        max-width: 46%;
+        padding-left: 24px;
+    }
+    .header__top .header__top--right{
+        max-width: 43%;
     }
     .header__main .col-menu{
         margin-top: -12px;
@@ -74,5 +78,44 @@
     }
     .footer__nav{
         width: 100%;
+    }
+    }
+
+
+/* iphong 6/7/8 */
+@media all  and (min-width: 375px) and (max-width: 667px){
+    .main .main__title{
+        margin: 0;
+    }
+    .main .main__best-seller .container>ul>li{
+        -webkit-border-radius: 14px;
+    }
+    .main .main__title h1{
+        padding-top: 150px;
+    }
+}
+@media all and (max-width: 1200px) {
+    .header__top .header__top--left .top__left--wellcommsg{
+        padding: 10px 9px 10px 0px;
+    }
+    .header__top a{
+        padding: 10px 3px 0px 6px;
+    }
+    .header .header__main ul.header__main--menu{
+        margin-top: 19px;
+    }
+    .main .main__title h1{
+        font-size: 31px;
+    }
+    .main-method .container .row .col-lg-4{
+        width: 69%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .header__main--Shopping-Cart .main__Shopping--logo{
+        margin-left: 5px;
+    }
+    .row{
+        flex-wrap: wrap;
     }
 }

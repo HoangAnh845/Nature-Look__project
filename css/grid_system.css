@@ -26,6 +26,7 @@ display: block;
 .col-lg-11,
 .col-lg-12 {
 float: left;
+flex-wrap: wrap;
 min-height: 1px;
 padding: 0 10px;
 }
