@@ -1,817 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 12</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/grid_system.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reponsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="header__top--left">
-                        <div class="top__left--wellcommsg">
-                            Welcome to our online store!
-                        </div>
-                        <ul class="top__left--langguage-pay">
-                            <li>
-                                <a href="#">English <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul class="langguage">
-                                    <li><a href="#">Arabic</a></li>
-                                    <li><a href="#">English</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">USD <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#">EURO</a></li>
-                                    <li><a href="#">POUND</a></li>
-                                    <li><a href="#">USD</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__top--right">
-                        <div class="top__right--account-wish">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>My Account</span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                    <ul>
-                                        <li><a href="#">Regiter</a></li>
-                                        <li><a href="#">Login</a></li>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nature Look</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid_system.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/reponsive.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="preloader">
+            <img src="images/loader.gif" alt="">
+        </div>
+
+        <!-- Begin .header -->
+        <header class="header">
+
+            <!-- Begin .header__top -->
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-6 header__top--left">
+                            <div class="top__left--wellcommsg">
+                                Welcome to our online store!
+                            </div>
+                            <ul class="top__left--langguage-pay">
+                                <li class="English">
+                                    <a href="#">English <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <ul class="langguage">
+                                        <li><a href="#">Arabic</a></li>
+                                        <li><a href="#">English</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><span> Wish List (0)  </a></li>
+                                <li class="USD"><a href="#">USD <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <ul class="pay">
+                                        <li><a href="#">EURO</a></li>
+                                        <li><a href="#">POUND</a></li>
+                                        <li><a href="#">USD</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
-                        <div class="top__right--search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <input type="text" placeholder="Search" class="right__search--input">
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    <!-- end header__top -->
+                        <!-- End .header__top--left-->
 
-        <!-- --------------------------------------------- -->
-        <div class="header__main">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-3 col-xs-12 col-md-3 col-sm-3  header__main--logo">
-                        <img src="images/logo.png" alt="#">
-                    </div>
-                    <!-- <div class="col-lg-1 col-xs-none col-md-none col-sm-none col-xs-none"></div>     -->
-                <div class="col-lg-6 col-xs-12 col-md-8 col-sm-8 col-menu">
-                    <ul class="header__main--menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Spa</a></li>
-                        <li>
-                            <a href="#">Page</a>
-                            <ul>
-                                <li><a href="#">Category Page</a></li>
-                                <li><a href="#">Cart Page</a></li>
-                                <li><a href="#">Checkout Page</a></li>
-                                <li><a href="#">Blog Page</a></li>
-                                <li><a href="#">Singale Blog Page</a></li>
-                                <li><a href="#">Register Page</a></li>
-                                <li><a href="#">Contact Page</a></li>
-                                <li><a href="#">Affiliate</a></li>
-                                <li><a href="#">Forget Password</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contrac Us</a></li>
-                    </ul>
-                </div>
-                <!-- end col -->
-                <div class="col col-lg-2 col-xs-2 col-md-1 col-sm-1 header__main--Shopping-Cart">
-                    <label for=Shopping>
-                        <div class="main__Shopping--logo">
-                            <img src="images/images__1.png" alt="#">
-                        </div>
-                        <div class="main__Shopping--text">
-                            <p style="color: #D39D5D;">SHOPPING CART</p>
-                            <p>3 item(s)-$254.00</p>
-                        </div>
-                    </label>
-                    <input type="checkbox" id="Shopping">
-                    <div class="main__Shopping--product">
-                        <ul>
-                            <li>
+                        <div class="col-xs-6 header__top--right">
+                            <div class="top__right--account-wish">
                                 <ul>
-                                    <li><img src="images/7product56x72.jpg" alt="#"></li>
-                                    <li><a href="#"><p>lorem ippsum dolor dummy</p></a></li>
-                                    <li><a href="#"><p>x $254.00</p></a></li>
-                                    <li><a href="#"><p style="color: red;" class="x">x</p></a></li>
+                                    <li class="my-Account">
+                                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>My
+                                                Account</span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                        <ul class="acconut">
+                                            <li><a href="#">Regiter</a></li>
+                                            <li><a href="#">Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><span> Wish List (0)
+                                        </a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li><img src="images/7product56x72.jpg" alt="#"></li>
-                                    <li><a href="#"><p>lorem ippsum dolor dummy</p></a></li>
-                                    <li><a href="#"><p>x $254.00</p></a></li>
-                                    <li><a href="#"><p style="color: red;" class="x">x</p></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li><img src="images/7product56x72.jpg" alt="#"></li>
-                                    <li><a href="#"><p>lorem ippsum dolor dummy</p></a></li>
-                                    <li><a href="#"><p>x $254.00</p></a></li>
-                                    <li><a href="#"><p style="color: red;" class="x">x</p></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="Shopping__product--totally">
-                            <div class="totally__text--left">
-                                <span>Sub Total</span><br/>
-                                <span>Eco tax(-2.00)</span><br/>
-                                <span>VAT (20%)</span><br/>
-                                <span>Total</span>
                             </div>
-                            <div class="totally__text--right">
-                                <span style="color: #7B7B7B;">$210.00</span><br/>
-                                <span style="color: #7B7B7B;">$2.00</span><br/>
-                                <span style="color: #7B7B7B;">$42.00</span><br/>
-                                <span style="color: #7B7B7B;">$254.00</span>
-                            </div>
-                            <div class="text-button">
-                                <button><i class="fas fa-shopping-cart"></i>View Cart</button>
-                                <button><i class="fas fa-share"></i>Check Out</button>
+                            <div class="top__right--search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <input type="text" placeholder="Search" class="right__search--input">
                             </div>
                         </div>
-                    </div>
-                    <!-- end main__Shopping--product -->
-                </div>
-                </div>
-            <!-- end row -->
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end header_main -->
-    </header>
-    <!-- end header -->
+                        <!-- End .header__top--right -->
 
-    <main class="main">
-        <div class="main__photo">
-            <a href="#"><img src="images/Main-Banner3.jpg" alt="#"></a>
-        </div>
-        <div class="main__title">
-            <h1>Our Special Services</h1>
-            <h5>Join Our Beauty Clun And Be Beautiful</h5>
-        </div>
-        <div class="main__services">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
-                   <img src="images/ico01.png" alt="#">
-                   <h4>MASSAGE SERVICES</h4>
-                   <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <button type="submi">Read More</button>
-                </div>
-                <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
-                    <img src="images/ico02.png" alt="#">
-                    <h4>SPA SERVICES</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                     <button type="submi">Read More</button>
-                 </div>
-                 <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
-                    <img src="images/ico03.png" alt="#">
-                    <h4>MAKE UP SERVICES</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                     <button type="submi">Read More</button>
-                 </div>
-            </div>
-        </div>
-        <!-- end main__services -->
-        <div class="main__services--img">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-6 col-xs-12 services__img-1">
-                        <img src="images/subbanner1.jpg" alt="#">
-                    </div>
-                    <div class="col col-lg-6 col-xs-12 services__img-2">
-                        <img src="images/subbanner2.jpg" alt="#">
-                        <img src="images/subbanner3.jpg" alt="#">
                     </div>
                 </div>
             </div>
-            <!-- end container -->
-        </div>
-        <!-- end main__services--img -->
-        <div class="main__title Futured">
-            <h1>Futured Products</h1>
-            <h5>Comfort For Every Women</h5>
-        </div>
-        <!-- end main__title Futured -->
-        <div class="main__list-product">
-            <div class="container">
+            <!-- End .header__top -->
+
+            <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+            <!-- Begin  .header__main-->
+            <div class="header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-xs-12 col-md-3 col-sm-3  header__main--logo">
+                            <img src="images/logo.png" alt="#">
+                        </div>
+
+                        <div id="closeMenu" class="col-lg-9 col-xs-12 col-md-8 col-sm-8 col-menu">
+                            <nav class="nav-inner">
+                                <div class="col-lg-12 navbar-header">
+                                    <span>Categories</span>
+                                    <button class="menu-toggle" type="button"><i class="fas fa-bars"></i></button>
+                                </div>
+                                <div class="menu-box">
+                                    <nav class="primary-menu">
+                                        <ul class="header__main--menu">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Spa</a></li>
+                                            <li>
+                                                <a href="#">Page</a>
+                                                <ul>
+                                                    <li><a href="#">Category Page</a></li>
+                                                    <li><a href="#">Cart Page</a></li>
+                                                    <li><a href="#">Checkout Page</a></li>
+                                                    <li><a href="#">Blog Page</a></li>
+                                                    <li><a href="#">Singale Blog Page</a></li>
+                                                    <li><a href="#">Register Page</a></li>
+                                                    <li><a href="#">Contact Page</a></li>
+                                                    <li><a href="#">Affiliate</a></li>
+                                                    <li><a href="#">Forget Password</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li>
+                                                <a href="#">More</a>
+                                                <ul class="more">
+                                                    <li><a href="#">About us</a></li>
+                                                    <li><a href="#">Contact Us</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- End .header__main--menu -->
+                            </nav>
+
+                            <div class=" col-xs-2 col-md-1 col-sm-1 header__main--Shopping-Cart">
+                                <label for=Shopping>
+                                    <div class="main__Shopping--logo">
+                                        <img src="images/images__1.png" alt="#">
+                                    </div>
+                                    <div class="main__Shopping--text">
+                                        <p style="color: #D39D5D;">SHOPPING CART</p>
+                                        <p>3 item(s)-$254.00</p>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="Shopping">
+                                <div class="main__Shopping--product">
+                                    <ul>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p><a href="http://"><img src="images/7product56x72.jpg"
+                                                                alt="#"></a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">lorem ippsum dolor dummy</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">x<span></span>$254.00<span
+                                                                style="color: red; font-weight: bold;">x</span>
+                                                            1</a></p>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p><a href="http://"><img src="images/7product56x72.jpg"
+                                                                alt="#"></a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">lorem ippsum dolor dummy</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">x<span></span>$254.00<span
+                                                                style="color: red; font-weight: bold;">x</span>
+                                                            1</a></p>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <p><a href="http://"><img src="images/7product56x72.jpg"
+                                                                alt="#"></a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">lorem ippsum dolor dummy</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="http://">x<span></span>$254.00<span
+                                                                style="color: red; font-weight: bold;">x</span>
+                                                            1</a></p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <div class="Shopping__product--totally">
+                                        <div class="totally__text--left">
+                                            <span>Sub Total</span><br />
+                                            <span>Eco tax(-2.00)</span><br />
+                                            <span>VAT (20%)</span><br />
+                                            <span>Total</span>
+                                        </div>
+                                        <div class="totally__text--right">
+                                            <span style="color: #7B7B7B;">$210.00</span><br />
+                                            <span style="color: #7B7B7B;">$2.00</span><br />
+                                            <span style="color: #7B7B7B;">$42.00</span><br />
+                                            <span style="color: #7B7B7B;">$254.00</span>
+                                        </div>
+                                        <div class="text-button">
+                                            <button><i class="fas fa-shopping-cart"></i>View Cart</button>
+                                            <button><i class="fas fa-share"></i>Check Out</button>
+                                        </div>
+                                    </div>
+                                    <!-- End .Shopping__product--totally -->
+
+                                </div>
+                                <!-- End .main__Shopping--product -->
+                            </div>
+                            <!-- End .main__Shopping--product -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End .header__main -->
+        </header>
+        <!-- End .header -->
+
+        <!-- Bengin .main -->
+        <main class="main">
+
+            <div class="">
+                <div id="main__slide" class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="item">
+                        <a href="#"><img src="images/Main-Banner1.jpg" alt="#"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/Main-Banner2.jpg" alt="#"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/Main-Banner3.jpg" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End #main__slide -->
+
+            <div class="main__title">
+                <h1>Our Special Services</h1>
+                <h5>Join Our Beauty Clun And Be Beautiful</h5>
+            </div>
+            <!-- End .main__title-->
+
+            <div class="main__services">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product1-0.jpg" alt="">
-                            <img src="images/product1-1.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
+                    <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
+                        <img src="images/ico01.png" alt="#">
+                        <h4>MASSAGE SERVICES</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna.</p>
+                        <button type="submi">Read More</button>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
+                        <img src="images/ico02.png" alt="#">
+                        <h4>SPA SERVICES</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna.</p>
+                        <button type="submi">Read More</button>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 main__services--MASSAGE">
+                        <img src="images/ico03.png" alt="#">
+                        <h4>MAKE UP SERVICES</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur aditpisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna.</p>
+                        <button type="submi">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End .main__services -->
+
+            <div class="main__services--img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6 col-xs-12 services__img-1">
+                            <img src="images/subbanner1.jpg" alt="#">
                         </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
+                        <div class="col col-lg-6 col-xs-12 services__img-2">
+                            <img src="images/subbanner2.jpg" alt="#">
+                            <img src="images/subbanner3.jpg" alt="#">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product2-1.jpg" alt="">
-                            <img src="images/product2-2.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
+                </div>
+            </div>
+            <!-- End .main__services--img -->
+
+            <div class="main__title Futured">
+                <h1>Futured Products</h1>
+                <h5>Comfort For Every Women</h5>
+            </div>
+            <!-- End .main__title Futured -->
+
+            <div class="main__list-product">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product1-0.jpg" alt="">
+                                <img src="images/product1-1.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
                             </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
+                            <!-- End .product-detail -->
                         </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product2-1.jpg" alt="">
+                                <img src="images/product2-2.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product3-1.jpg" alt="">
+                                <img src="images/product3-3.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product4-1.jpg" alt="">
+                                <img src="images/product4-4.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product5-1.jpg" alt="">
+                                <img src="images/product5-5.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product6-1.jpg" alt="">
+                                <img src="images/product6-6.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product7-1.jpg" alt="">
+                                <img src="images/product7-7.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product8-1.jpg" alt="">
+                                <img src="images/product8-8.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End .product-header-->
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                            <!-- End .product-detail -->
+                        </div>
+                        <!-- End .product -->
                     </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product3-1.jpg" alt="">
-                            <img src="images/product3-3.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product4-1.jpg" alt="">
-                            <img src="images/product4-4.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product5-1.jpg" alt="">
-                            <img src="images/product5-5.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product6-1.jpg" alt="">
-                            <img src="images/product6-6.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product7-1.jpg" alt="">
-                            <img src="images/product7-7.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product8-1.jpg" alt="">
-                            <img src="images/product8-8.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
+
                     <div class="button-view">
                         <button type="button">View More All Products</button>
                     </div>
-                </div>
-                <!-- ------ -->
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end main__list-product -->
-        <div class="main__designer">
-            <img src="images/t1.png" alt="#">
-            <h2>Janet Wilson</h2>
-            <p>Web Designer</p>
-            <p>Rem ipsum doLoremRem ipsum doLorem ipsum ipsum doLorem ipsum ut labore et dolore ma ipsum ut labore et <br> dolore Rem ipsum doLorem ipsum ut labore et dolore mamagna. Lorem ipsumut labore et dolore mamagna. Lorem ipsum doLorem ipsum dolor<br>sit amet, consectetur adipisicing.</p>
-        </div>
-        <div class="main-method">
-            <div class="container">
-                <div class="row">
-                   <div class="col col-lg-4 col-xs-12">
-                       <div class="freeship">
-                           <h4>Free Shipping & Return</h4>
-                           <p>All Order Over $ 338</p>
-                       </div>
-                   </div>
-                   <div class="col col-lg-4 col-xs-12">
-                    <div class="Support ">
-                        <h4>Online Support 24/7</h4>
-                        <p>All Question All Time</p>
-                    </div>
-                </div>
-                <div class="col col-lg-4 col-xs-12">
-                    <div class="Money">
-                        <h4>Money Back Guarantee</h4>
-                        <p>100% Money back Guarantee</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- end main-method -->
+                    <!-- End .button-view -->
 
-        <div class="main__best-seller">
+                </div>
+            </div>
+            <!-- End .main__list-product -->
+
+            <div class="main__designer">
+                <div id="main__designer-introduce" class="introduce owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="item">
+                        <img src="images/t1.png" alt="#">
+                        <h2>Janet Wilson</h2>
+                        <p>Web Designer</p>
+                        <p>Rem ipsum doLoremRem ipsum doLorem ipsum ipsum doLorem ipsum ut labore et dolore ma ipsum ut
+                            labore
+                            et <br> dolore Rem ipsum doLorem ipsum ut labore et dolore mamagna. Lorem ipsumut labore et
+                            dolore
+                            mamagna. Lorem ipsum doLorem ipsum dolor<br>sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/t2.png" alt="#">
+                        <h2>Janet Wilson</h2>
+                        <p>Web Designer</p>
+                        <p>Rem ipsum doLoremRem ipsum doLorem ipsum ipsum doLorem ipsum ut labore et dolore ma ipsum ut
+                            labore
+                            et <br> dolore Rem ipsum doLorem ipsum ut labore et dolore mamagna. Lorem ipsumut labore et
+                            dolore
+                            mamagna. Lorem ipsum doLorem ipsum dolor<br>sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/t3.png" alt="#">
+                        <h2>Janet Wilson</h2>
+                        <p>Web Designer</p>
+                        <p>Rem ipsum doLoremRem ipsum doLorem ipsum ipsum doLorem ipsum ut labore et dolore ma ipsum ut
+                            labore
+                            et <br> dolore Rem ipsum doLorem ipsum ut labore et dolore mamagna. Lorem ipsumut labore et
+                            dolore
+                            mamagna. Lorem ipsum doLorem ipsum dolor<br>sit amet, consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End .main__designer -->
+
+            <div class="main-method">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-4 col-xs-12">
+                            <div class="freeship">
+                                <h4>Free Shipping & Return</h4>
+                                <p>All Order Over $ 338</p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-xs-12">
+                            <div class="Support ">
+                                <h4>Online Support 24/7</h4>
+                                <p>All Question All Time</p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-xs-12">
+                            <div class="Money">
+                                <h4>Money Back Guarantee</h4>
+                                <p>100% Money back Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End .main-method -->
+
+            <div class="main__best-seller">
+                <div class="container">
+                    <h1>Best Seller</h1>
+                    <ul class="button">
+                        <li>
+                            <a class="active" href="#">Skincare</a>
+                        </li>
+                        <li>
+                            <a href="#">Haircare</a>
+                        </li>
+                        <li>
+                            <a href="#">Cosmetics cases</a>
+                        </li>
+                        <li>
+                            <a href="#">Fragrance</a>
+                        </li>
+                        <li>
+                            <a href="#">Make up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End  .main__best-seller -->
+
+            <div class="main__list-product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product4-4.jpg" alt="">
+                                <img src="images/product2-2.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product3-3.jpg" alt="">
+                                <img src="images/product2-2.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product6-6.jpg" alt="">
+                                <img src="images/product2-2.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-4  col-xs-6 product">
+                            <div class="product-header">
+                                <img src="images/product8-8.jpg" alt="">
+                                <img src="images/product2-2.jpg" alt="">
+                                <div class="product-button">
+                                    <ul>
+                                        <li><button type="button" title="Add to Wish List"><i
+                                                    class="far fa-heart"></i></button></li>
+                                        <li><button type="button" title="Compare this Product"><i
+                                                    class="fas fa-exchange-alt"></i></button></li>
+                                        <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
+                                        </li>
+                                        <li><button type="button">Add to Cart</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="product-detail__rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i
+                                            class="fa fa-star fa-stack-2x"></i></span>
+                                </div>
+                                <p class="product-detail__name">
+                                    Casual Shirt With Ruffle Hem
+                                </p>
+                                <p class="product-detail__price">
+                                    $122.00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End .main__list-product -->
+
             <div class="container">
-                <h1>Best Seller</h1>
-                <ul class="button">
-                    <li>
-                        <a class="active" href="#">Skincare</a></li>
-                    <li>
-                        <a href="#">Haircare</a>
-                    </li>
-                    <li>
-                        <a href="#">Cosmetics cases</a>
-                    </li>
-                    <li>
-                        <a href="#">Fragrance</a>
-                    </li>
-                    <li>
-                        <a href="#">Make up</a>
-                    </li>
-                </ul>
+                <div class="main__title Futured Blog">
+                    <h1>From The Blog</h1>
+                    <h5>Latest Event & News</h5>
+                </div>
+                <!-- End .main__title Futured Blog -->
+
+                <div class="main__the-bolg">
+                    <div class="row">
+                        <div class="col col-lg-4 col-xs-12">
+                            <div class="img-opacity">
+                                <img src="images/images_1 (2).png" alt="">
+                            </div>
+                            <div class="model">
+                                <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
+                                <p><i>By <span>mark grage</span> 3Conments</i></p>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some look even slightly believable.</p>
+                            <button class="button">Read More</button>
+                        </div>
+                        <div class="col col-lg-4  col-xs-12">
+                            <div class="img-opacity">
+                                <img src="images/images_1 (1).png" alt="">
+                            </div>
+                            <div class="model">
+                                <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
+                                <p><i>By <span>mark grage</span> 3Conments</i></p>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some look even slightly believable.</p>
+                            <button class="button">Read More</button>
+                        </div>
+                        <div class="col col-lg-4  col-xs-12">
+                            <div class="img-opacity">
+                                <img src="images/images_1 (3).png" alt="">
+                            </div>
+                            <div class="model">
+                                <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
+                                <p><i>By <span>mark grage</span> 3Conments</i></p>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some look even slightly believable.</p>
+                            <button class="button">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End .main__the-bolg -->
             </div>
-        </div>
-        <!--end  main__best-seller -->
-        <div class="main__list-product">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product4-4.jpg" alt="">
-                            <img src="images/product2-2.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
+
+            <div class="main__title Brands ">
+                <div class="container">
+                    <div class="banner-header">
+                        <h1>Favourite Brands</h1>
+                        <h5>The High Quality Products</h5>
                     </div>
-                    
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product3-3.jpg" alt="">
-                            <img src="images/product2-2.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
+                    <div id="favorite-brands" class="row banner owl-carousel owl-theme">
+                        <img class="item" src="images/brand1.png" alt="#">
+                        <img class="item" src="images/brand2.png" alt="#">
+                        <img class="item" src="images/brand3.png" alt="#">
+                        <img class="item" src="images/brand4.png" alt="#">
+                        <img class="item" src="images/brand5 (1).png" alt="">
+                        <img class="item" src="images/brand6.png" alt="">
+                        <img class="item" src="images/brand7.png" alt="">
+                        <img class="item" src="images/brand8.png" alt="">
+                        <img class="item" src="images/brand9.png" alt="">
                     </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product6-6.jpg" alt="">
-                            <img src="images/product2-2.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4  col-xs-6 product">
-                        <div class="product-header">
-                            <img src="images/product8-8.jpg" alt="">
-                            <img src="images/product2-2.jpg" alt="">
-                            <div class="product-button">
-                                <ul>
-                                    <li><button type="button" title="Add to Wish List"><i class="far fa-heart"></i></button></li>
-                                    <li><button type="button" title="Compare this Product"><i class="fas fa-exchange-alt"></i></button></li>
-                                    <li><button type="button" title="Quick View"><i class="fa fa-eye"></i></button>
-                                    </li>
-                                    <li><button type="button">Add to Cart</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="product-detail__rating">
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                            </div>
-                            <p class="product-detail__name">
-                                Casual Shirt With Ruffle Hem
-                            </p>
-                            <p class="product-detail__price">
-                                $122.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!-- ------ -->
-            </div>
-            <!-- end product__container -->
-        </div>
-        <div class="container">
-            <div class="main__title Futured Blog">
-           <h1>From The Blog</h1>
-           <h5>Latest Event & News</h5>
-       </div>
-        <div class="main__the-bolg">
-            <div class="row">
-                <div class="col col-lg-4 col-xs-12">
-                    <img src="images/images_1 (2).png" alt="">
-                    <div class="model">
-                        <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
-                        <p><i>By <span>mark grage</span> 3Conments</i></p>
-                    </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some look even slightly believable.</p>
-                    <button class="button">Read More</button>
-                </div>
-                <div class="col col-lg-4  col-xs-12">
-                    <img src="images/images_1 (1).png" alt="">
-                    <div class="model">
-                        <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
-                        <p><i>By <span>mark grage</span> 3Conments</i></p>
-                    </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some look even slightly believable.</p>
-                    <button class="button">Read More</button>
-                </div>
-                <div class="col col-lg-4  col-xs-12">
-                    <img src="images/images_1 (3).png" alt="">
-                    <div class="model">
-                        <h4><a href="#">Handful of model sentence of model sentence of model structures</a></h4>
-                        <p><i>By <span>mark grage</span> 3Conments</i></p>
-                    </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some look even slightly believable.</p>
-                    <button class="button">Read More</button>
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="main__title Brands ">
-            <div class="container">
-                <div class="banner-header">
-                    <h1>Favourite Brands</h1>
-                    <h5>The High Quality Products</h5>
-                </div>
-                <div class="row banner">
-                    <img src="images/brand1.png" alt="#">
-                    <img src="images/brand2.png" alt="#">
-                    <img src="images/brand3.png" alt="#">    
-                    <img src="images/brand4.png" alt="#">
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- end main -->
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-8 col-xs-12">
-                        <h1>Sign up for our Newsletter :-</h1>
-                        <p>Be sure to follow our blog and sign up for all of our mailing updates!</p>
-                        <div class="email">
-                            <input type="text" placeholder="Your-email@website.com">
-                            <button>Subscribe</button>
+            <!-- End .main__title Brands -->
+        
+        </main>
+        <!-- End .main -->
+
+        <!-- Begin .footer -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-8 col-xs-12">
+                            <h1>Sign up for our Newsletter :-</h1>
+                            <p>Be sure to follow our blog and sign up for all of our mailing updates!</p>
+                            <div class="email">
+                                <input type="text" placeholder="Your-email@website.com">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4  col-xs-12">
+                            <h1>Follow me :-</h1>
+                            <p>Trusted by Millions of Websites Like Yours!</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col col-lg-4  col-xs-12">
-                        <h1>Follow me :-</h1>
-                        <p>Trusted by Millions of Websites Like Yours!</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
+                </div>
+            </div>
+            <!-- End footer__top -->
+
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-xs-6">
+                            <h2 class="title">Information</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Gift Certificates</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-3 col-xs-6">
+                            <h2 class="title">My Account</h2>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                                <li><a href="#">Gift Certificates</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Specials</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-3 col-xs-6">
+                            <h2 class="title">Extras</h2>
+                            <ul>
+                                <li><a href="#">Delivery information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Product Recall</a></li>
+                                <li><a href="#">Gift Vouchers</a></li>
+                                <li><a href="#">Help & FAQs</a></li>
+                                <li><a href="#">Sale Only Today</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-3 col-xs-6">
+                            <h2 class="title">Contact Us</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="map">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            Offices Addresss:<br>
+                                            218,Drimlend Building<br>
+                                            Sarthana jakatnaka, Surat City <br>
+                                            Gujarat-395013 INDIA
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="phone">
+                                            <i class="fas fa-envelope"></i>
+                                            info@localhost.com<br>
+                                            your@domain.com
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <i class="fas fa-mobile-alt"></i>
+                                            +91 0987-654-321<br>
+                                            +91 0987-654-321
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- edn row -->
-            </div>
-            <!--  end footer__bottom-container -->
-        </div>
-        <!-- end footer__bottom -->
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-3 col-xs-6">
-                        <h2 class="title">Information</h2>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Wish List</a></li>
-                            <li><a href="#">Gift Certificates</a></li>
-                            <li><a href="#">View Cart</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Specials</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-xs-6">
-                        <h2 class="title">My Account</h2>
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Wish List</a></li>
-                            <li><a href="#">Newsletter</a></li>
-                            <li><a href="#">Gift Certificates</a></li>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Specials</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-xs-6">
-                        <h2 class="title">Extras</h2>
-                        <ul>
-                            <li><a href="#">Delivery information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                            <li><a href="#">Product Recall</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Help & FAQs</a></li>
-                            <li><a href="#">Sale Only Today</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-3 col-xs-6">
-                        <h2 class="title">Contact Us</h2>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                   <span class="map">
-                                    <i class="fas fa-map-marker-alt"></i> 
-                                    Offices Addresss:<br>
-                                    218,Drimlend Building<br>
-                                    Sarthana jakatnaka, Surat City <br>
-                                    Gujarat-395013  INDIA
-                                   </span> 
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="phone">
-                                        <i class="fas fa-envelope"></i>
-                                        info@localhost.com<br>
-                                        your@domain.com
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        <i class="fas fa-mobile-alt"></i>
-                                        +91 0987-654-321<br>
-                                        +91 0987-654-321
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end footer__bottom-container -->
-            <div class="footer__nav">
+               
+                <div class="footer__nav">
                     <ul class="nav">
                         <li class="atice"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -821,27 +1079,39 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                <span>Copyright - Created by Leonode © 2017</span>
-                <div class="footer__bank">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="images/payment1.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/payment2.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/payment3.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/payment4.jpg" alt=""></a>
-                        </li>
-                    </ul>
+                    <span>Copyright - Created by Leonode © 2017</span>
+                    <div class="footer__bank">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/payment1.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/payment2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/payment3.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/payment4.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- End .footer__nav -->
+
             </div>
-            <!-- end footer__nav -->
-        </div>
-        <!-- end footer__bottom -->
-    </footer>
-</body>
+            <!-- End .footer__bottom -->
+
+            <div id="scrollup" class="back-to-top">
+                <a href=""></a>
+            </div>
+            <!-- End .back-to-top -->
+            
+        </footer>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
 </html>

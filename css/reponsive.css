@@ -1,100 +1,124 @@
+/* Media query chung */
+@media all and (max-width: 1200px) {
+  .nav-inner .navbar-header {
+    padding: 23px 10px;
+    display: block;
+    position: relative;
+  }
+
+  .nav-inner .navbar-header button {
+    float: right;
+    font-size: 26px;
+    background: transparent;
+    border: none;
+    margin-left: 46px;
+  }
+
+  .nav-inner .navbar-header span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+
+  .col-menu {
+    width: 75%;
+  }
+
+  .header__main--Shopping-Cart {
+    width: 28%;
+  }
+
+  .menu-box {
+    position: absolute;
+    top: 100%;
+    right: 29.7%;
+    z-index: 100;
+    width: 190px;
+    height: 236px;
+    border: 1px solid #ddd;
+    background: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .primary-menu {
+    position: relative;
+    z-index: 120;
+    line-height: 38px;
+    padding: 0px 21px;
+  }
+
+  .header .header__main ul.header__main--menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .header__main ul.header__main--menu li {
+    padding: 0;
+  }
+
+  .header .header__main ul.header__main--menu > li + li::before {
+    content: "";
+    display: block;
+    float: left;
+    padding-right: 15px;
+  }
+
+  .header .header__main ul.header__main--menu {
+    width: 146px;
+    margin: 30px auto;
+    line-height: 32px;
+  }
+
+  .header .header__main ul.header__main--menu li:nth-child(3) a::after,
+  .header .header__main ul.header__main--menu li:nth-child(5) a::after {
+    content: "+";
+    color: #999999;
+    font-weight: normal;
+    font-size: 21px;
+    float: right;
+  }
+
+  .header .header__main ul.header__main--menu > li ul.more {
+    left: 0;
+  }
+
+  .header .header__main ul.header__main--menu > li ul {
+    height: 442px;
+  }
+}
+
 /* Máy tính bảng loại to (Chiều ngang) */
-@media  (max-width: 768px){
-    .container{
-        width: 100%;
-    }
-    .header__top .header__top--left{
-        max-width: 46%;
-        padding-left: 24px;
-    }
-    .header__top .header__top--right{
-        max-width: 43%;
-    }
-    .header__main .col-menu{
-        margin-top: -12px;
-    }
-    .header__main .header__main--Shopping-Cart{
-        width: 100%;
-        margin-left: 32px;
-    }
-    .main .main__title h1{
-        font-size: 33px;
-    }
-    .main .main__services .main__services--MASSAGE p{
-        width: 228px;
-    }
-    .button-view{
-        margin-left: 245px;
-    }
-    /* ------- */
-    .main-method .container .row .col-lg-4{
-        height: 109px;
-    }
-    .container .freeship{
-        background: url(../images/methood.png) no-repeat scroll 0px 27px;
-        background-size: 61px;
-        padding: 7px 0px 30px 88px;
-    }
-    .main-method .container .row .col-lg-4 h4{
-        margin-top: 0px;
-    }
-    .container .Support{
-        background: url(../images/methood.png) no-repeat scroll 9px -179px;
-        background-size: 61px;
-        height: 100px;
-        padding: 7px 0px 30px 95px;
-    }
-    .container .Money{
-        background: url(../images/methood.png) no-repeat scroll 8px -376px;
-        height: 100px;
-        background-size: 61px;
-        padding: 7px 0px 30px 87px;
-    }
-    /* --------- */
-    .main .main__best-seller .container>ul{
-        flex-wrap:nowrap;
-    }
-    .main__the-bolg{
-        max-width: 100%;
-    }
-    .banner{
-        max-width: 100%;
-        margin-left: 0px;
-    }
-    .banner img{
-        width: 195px;
-    }
-    .footer .footer__top{
-        padding: 84px 27px;
-    }
-    .footer .footer__top .col-xs-12 ul{
-        width: 291px;
-    }
-    .footer__bottom .container{
-        margin: 0;
-    }
-    .footer__bottom .container .row .col{
-        margin-top: 29px;
-    }
-    .footer__nav{
-        width: 100%;
-    }
+@media all and (min-width: 375px) and (max-width: 667px) {
+
+    .header__top--left .top__left--wellcommsg{
+        font-size: 20px;
+        color: red;
     }
 
+}
 
 /* iphong 6/7/8 */
-@media all  and (min-width: 375px) and (max-width: 667px){
-    .main .main__title{
-        margin: 0;
-    }
-    .main .main__best-seller .container>ul>li{
-        -webkit-border-radius: 14px;
-    }
-    .main .main__title h1{
-        padding-top: 150px;
-    }
-}
-@media all and (max-width: 1200px) {
+/* @media all and (min-width: 375px) and (max-width: 667px) {
+  .main .main__title {
+    margin: 0;
+  }
+  .main .main__best-seller .container > ul > li {
+    -webkit-border-radius: 14px;
+  }
+  .main .main__title h1 {
+    padding-top: 150px;
+  }
+  .nav-inner .navbar-header {
+    display: block;
+  }
+  .header__main--menu {
+    display: none;
+  }
+} */
+
+/* @media all and (max-width: 1200px) {
     .header__top .header__top--left .top__left--wellcommsg{
         padding: 10px 9px 10px 0px;
     }
@@ -118,4 +142,4 @@
     .row{
         flex-wrap: wrap;
     }
-}
+} */
