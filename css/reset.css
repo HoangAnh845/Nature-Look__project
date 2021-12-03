@@ -42,6 +42,7 @@ body {
     line-height: 22px;
     position: relative;
     background: #FFF;
+    overflow-x: hidden;
 }
 
 a {

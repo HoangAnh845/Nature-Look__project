@@ -104,6 +104,21 @@ $(document).ready(function () {
         dots: false,
         nav: true,
         navText: ['<div></div>', ' <div></div>'],
+        responsiveClass:true,
+        responsive: {
+            0: {
+                items: 2,
+                nav:true
+            },
+            600: {
+                items: 2,
+                nav:true
+            },
+            1000: {
+                items: 4,
+                nav:true
+            }
+        },
     });
 
     /*Sự kiện onscroll*/

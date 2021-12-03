@@ -33,14 +33,19 @@
   .menu-box {
     position: absolute;
     top: 100%;
-    right: 29.7%;
     z-index: 100;
-    width: 190px;
+    width: 25%;
     height: 236px;
     border: 1px solid #ddd;
     background: white;
     display: none;
     overflow: hidden;
+    box-shadow: 0px 0px 15px 4px #d39d5d;
+    margin-left: 10px;
+  }
+
+  .main__Shopping--product{
+    left: 60%;
   }
 
   .primary-menu {
@@ -87,59 +92,241 @@
   .header .header__main ul.header__main--menu > li ul {
     height: 442px;
   }
-}
 
-/* Máy tính bảng loại to (Chiều ngang) */
-@media all and (min-width: 375px) and (max-width: 667px) {
-
-    .header__top--left .top__left--wellcommsg{
-        font-size: 20px;
-        color: red;
-    }
-
-}
-
-/* iphong 6/7/8 */
-/* @media all and (min-width: 375px) and (max-width: 667px) {
-  .main .main__title {
-    margin: 0;
-  }
-  .main .main__best-seller .container > ul > li {
-    -webkit-border-radius: 14px;
-  }
-  .main .main__title h1 {
-    padding-top: 150px;
-  }
-  .nav-inner .navbar-header {
-    display: block;
-  }
-  .header__main--menu {
+  /*  */
+  
+  .header__top .header__top--left .top__left--wellcommsg{
     display: none;
   }
-} */
 
-/* @media all and (max-width: 1200px) {
-    .header__top .header__top--left .top__left--wellcommsg{
-        padding: 10px 9px 10px 0px;
-    }
-    .header__top a{
-        padding: 10px 3px 0px 6px;
-    }
-    .header .header__main ul.header__main--menu{
-        margin-top: 19px;
-    }
-    .main .main__title h1{
-        font-size: 31px;
-    }
-    .main-method .container .row .col-lg-4{
-        width: 69%;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    .header__main--Shopping-Cart .main__Shopping--logo{
-        margin-left: 5px;
-    }
-    .row{
-        flex-wrap: wrap;
-    }
-} */
+  .header .header__main .header__main--logo{
+    width: 100%;
+    
+  }
+
+  .header .header__main .header__main--logo img{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header__main .col-menu{
+    width: 100%;
+  }
+
+  .header__main .header__main--Shopping-Cart{
+    flex: auto;
+    display: flex;
+    justify-content: end;
+  }
+
+  .distance{
+    display: block;
+  }
+
+  .main .main__services .main__services--MASSAGE p{
+    padding: 24px 23px;
+  }
+
+  .main-method .row .col-lg-4 p{
+    font-size: 11px;
+  }
+}
+
+
+@media all and (min-width: 993px) and (max-width: 1200px) {
+  .button-view{
+    margin-left: 0;
+  }
+
+  .button-view {
+    width: 100%;
+    padding: 40px 368px;
+    margin: 0;
+  }
+
+  .button-view button{
+    margin: 0;
+  }
+
+  .main-method .container .row .col-lg-4{
+    overflow: hidden;
+  }
+
+  .main-method .container .row{
+    margin: 0;
+  }
+
+  .main-method .container .row .col-lg-4{
+    margin: 73px 10px;
+  }
+
+  .container .freeship {
+    background: url(../images/methood.png) no-repeat scroll 12px 33px;
+    padding: 11px 3px 0px 95px;
+  }
+
+  .container .Support {
+    background: url(../images/methood.png) no-repeat scroll 12px -124px;
+    padding: 7px 0px 30px 103px;
+  }
+
+  .container .Money {
+    background: url(../images/methood.png) no-repeat scroll 14px -273px;
+    padding: 7px 0px 30px 92px;
+  }
+
+  .main__the-bolg .row .col:nth-child(3){
+    display: none;
+  }
+
+  .footer .footer__top{
+    padding: 126px 9px;
+  }
+
+  .footer__nav{
+    width: 100%;
+  }
+
+  .preloader {
+    top: 56%;
+    right: 18%;
+  }
+
+  .back-to-top{
+    left: 76%;
+    right: 0;
+  }
+}
+
+/*Màn hình Ipad*/
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .main__Shopping--product{
+    margin-left: -14%;
+  }
+  .main .main__title h1{
+    font-size: 38px;
+  }
+
+  .button-view{
+    margin-left: 0;
+  }
+
+  .button-view {
+    width: 100%;
+    padding: 40px 260px;
+    margin: 0;
+  }
+
+  .button-view button{
+    margin: 0;
+  }
+
+  .main-method .container .row{
+    flex-direction: column;
+  }
+
+  .main-method .container .row .col-lg-4{
+    overflow: hidden;
+    width: 94%;
+  }
+
+  .main .main__best-seller .container > ul{
+    flex-wrap: nowrap;
+  }
+
+  .footer .footer__top{
+    padding: 105px 49px;
+  }
+
+  .footer__nav{
+    width: 100%;
+  }
+
+  .back-to-top{
+    left: 58%;
+    right: 0;
+  }
+
+  .preloader {
+    top: 45%;
+    right: 33%;
+  }
+}
+
+/*Màn hình di động*/
+
+@media all and (max-width: 767px) {
+  .preloader {
+    top: 28%;
+    right: 37%;
+  }
+
+  .main .main__title h1{
+    font-size: 34px;
+  }
+
+  .button-view{
+    margin-left: 0;
+  }
+
+  .button-view {
+    width: 100%;
+    padding: 40px 260px;
+    margin: 0;
+  }
+
+  .button-view button{
+    margin: 0;
+  }
+
+  .main-method .container .row{
+    flex-direction: column;
+  }
+
+  .main-method .container .row .col-lg-4{
+    overflow: hidden;
+    width: 94%;
+  }
+
+  .main .main__best-seller .container > ul{
+    flex-wrap: nowrap;
+  }
+
+  .footer .footer__top{
+    padding: 58px 49px;
+  }
+
+  .footer__nav{
+    width: 100%;
+  }
+
+  .back-to-top{
+    left: 58%;
+    right: 0;
+  }
+
+  .preloader {
+    top: 45%;
+    right: 33%;
+  }
+}
+
+@media all and (max-width: 617px){
+  .main .main__title h1{
+    font-size: 20px;
+  }
+  
+  .main .main__services .row{
+    flex-direction: column;
+  }
+
+  .main .main__services .main__services--MASSAGE{
+    margin: 20px 0px;
+  }
+
+  .button-view{
+    padding: 40px 199px;
+  }
+}
