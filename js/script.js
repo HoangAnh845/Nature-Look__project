@@ -16,7 +16,7 @@ $(document).ready(function () {
     navHeader.click(function () {
         $('.menu-box').slideToggle();
     });
-    
+
 
 
     /* Ẩn/Hiện cho .langguage */
@@ -104,19 +104,44 @@ $(document).ready(function () {
         dots: false,
         nav: true,
         navText: ['<div></div>', ' <div></div>'],
-        responsiveClass:true,
+        responsiveClass: true,
         responsive: {
             0: {
                 items: 2,
-                nav:true
+                nav: true
             },
             600: {
                 items: 2,
-                nav:true
+                nav: true
             },
             1000: {
                 items: 4,
-                nav:true
+                nav: true
+            }
+        },
+    });
+
+    /* slider hình ảnh cho #main__list-products */
+    $('#main__list-products').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 4,
+        dots: false,
+        nav: true,
+        navText: ['<div></div>', ' <div></div>'],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: true
+            },
+            1000: {
+                items: 4,
+                nav: true
             }
         },
     });
@@ -152,6 +177,29 @@ $(document).ready(function () {
     });
 
 
+    // sự kiện cho .tabs--panel
+    const $tabNavItem = $('.main__best-seller .button li a');
+    const $tabContentItem = $('.main__list-product .tabs--panel');
+
+    if ($tabNavItem.length > 0 && $tabContentItem.length > 0) {
+        $tabNavItem.click(function (e) {
+            e.preventDefault();
+            let hash = $(this).attr('href');
+
+            $tabNavItem.parent('li').removeClass('active');
+            $(this).parent('li').addClass('active');
+            
+            $tabContentItem.parent().find('.active').fadeOut(400, function () {
+                //Remove active tab content
+                $tabContentItem.removeClass('active');
+
+                $tabContentItem.parent().find(hash).fadeIn(400, function () {
+                    //Add active current
+                    $tabContentItem.parent().find(hash).addClass('active');
+                });
+            });
+        });
+    }
 });
 
 
