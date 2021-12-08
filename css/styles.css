@@ -1130,8 +1130,9 @@
 /* end Favourite Brands */
 .footer .footer__top {
   background: url(../IMAGES/news-Bg.jpg) no-repeat ;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  background: url(../images/sprite.png) no-repeat scroll 43px -219px;
   background-color: #d39d5d;
   background-position: center;
   background-size: 100%;
@@ -1162,8 +1163,8 @@
   border: none;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  background: var(--color-brown) !important;
   background: blue;
+  background: var(--color-brown);
   color: white;
   font-weight: 700;
   font-size: 16px;
