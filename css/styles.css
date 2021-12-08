@@ -477,7 +477,7 @@
 
 .main .main__services .main__services--MASSAGE p {
   color: #808080;
-  padding: 24px 75px;
+  padding: 24px 6px;
   margin: 0 auto;
 }
 
@@ -1129,7 +1129,8 @@
 
 /* end Favourite Brands */
 .footer .footer__top {
-  background: url(../IMAGES/news-Bg.jpg) no-repeat;
+  background: url(../IMAGES/news-Bg.jpg) no-repeat ;
+  background-color: #d39d5d;
   background-position: center;
   background-size: 100%;
   height: 400px;
@@ -1159,7 +1160,8 @@
   border: none;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  background: var(--color-brown);
+  background: var(--color-brown) !important;
+  background: blue;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -1200,10 +1202,10 @@
   margin: 95px 0px;
 }
 
-.footer__bottom .container {
-  /* width: 1200px; */
+/* .footer__bottom .container {
+  width: 1200px;
   margin: 28px 160px;
-}
+} */
 .footer__bottom .container .row .col {
   width: 300px;
   margin-bottom: 40px;
