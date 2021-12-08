@@ -1130,6 +1130,8 @@
 /* end Favourite Brands */
 .footer .footer__top {
   background: url(../IMAGES/news-Bg.jpg) no-repeat ;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #d39d5d;
   background-position: center;
   background-size: 100%;
