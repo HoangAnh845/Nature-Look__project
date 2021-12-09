@@ -1130,7 +1130,7 @@
 /* end Favourite Brands */
 .footer .footer__top {
   background: url(../IMAGES/news-Bg.jpg) no-repeat ;
-  /* background-color: #d39d5d; */
+  background-color: #d39d5d;
   background-position: center;
   background-size: 100%;
   height: 400px;
@@ -1160,7 +1160,6 @@
   border: none;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  background: blue;
   background: var(--color-brown);
   color: white;
   font-weight: 700;
