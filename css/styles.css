@@ -1,6 +1,5 @@
  /* trình tải trước .preloader*/
 .preloader{
-  width: 200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +7,7 @@
   bottom: 0;
   margin: 0 auto;
   z-index: 9999;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@
   -moz-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
+  
 }
 
 .nav-inner .navbar-header{
@@ -1130,7 +1131,6 @@
 /* end Favourite Brands */
 .footer .footer__top {
   background: url(../images/news-Bg.jpg) no-repeat ;
-  background-color: #d39d5d;
   background-position: center;
   background-size: 100%;
   height: 400px;
@@ -1241,7 +1241,7 @@
 /* end footer__bottom-container */
 .footer__nav {
   width: 1170px;
-  margin: 0 auto;
+  margin: 23px auto;
   text-align: center;
 }
 .footer__nav a,

@@ -1,3 +1,4 @@
+
 /* Media query chung */
 @media all and (max-width: 1200px) {
   .nav-inner .navbar-header {
@@ -131,11 +132,11 @@
     font-size: 11px;
   }
 
-  .main__the-bolg{
+  .main__the-bolg {
     width: 100%;
   }
 
-  .main__the-bolg .row .col{
+  .main__the-bolg .row .col {
     width: 100%;
   }
 }
@@ -205,9 +206,252 @@
   }
 }
 
-/*Màn hình Ipad*/
+/*Máy moblie chiều ngang*/
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .header__main .header__main--Shopping-Cart .main__Shopping--text {
+    display: none;
+  }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+  .main .main__title {
+    margin: 0;
+    /* display: block; */
+  }
+
+  .header__top .header__top--right .top__right--search {
+    display: none;
+  }
+  .main__Shopping--product {
+    left: -24%;
+  }
+  .main .main__services .main__services--MASSAGE h4 {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #000000;
+  }
+  .main .main__services .row .main__services--MASSAGE button {
+    font-size: 13px;
+  }
+  .main .main__title h1 {
+    font-size: 21px;
+  }
+  .main .main__title h5 {
+    font-size: 12px;
+  }
+  .main-method .container .row {
+    flex-direction: column;
+  }
+  .main-method .container .row .col-lg-4 {
+    width: 91%;
+  }
+
+  .product .product-button {
+    position: inherit;
+  }
+
+  .product .product-detail {
+    margin-top: -67px;
+  }
+
+  .main .main__best-seller .container > ul > li:nth-child(3),
+  .main .main__best-seller .container > ul > li:nth-child(4),
+  .main .main__best-seller .container > ul > li:nth-child(5) {
+    display: none;
+  }
+
+  .main__the-bolg .row {
+    flex-direction: column;
+  }
+
+  .main__the-bolg .row .col {
+    margin-top: 0;
+  }
+
+  .main .main__services .row {
+    flex-direction: column;
+  }
+
+  .main .main__services .main__services--MASSAGE {
+    margin-bottom: 20px;
+  }
+
+  .footer .footer__top {
+    padding: 0;
+  }
+
+  .footer .footer__top .container .col p {
+    padding-bottom: 11px;
+    margin-top: 26px;
+  }
+
+  .footer__nav {
+    text-align: left;
+  }
+
+  .main-method .container .row .col-lg-4 {
+    /* width: 31%; */
+    height: 131px;
+  }
+
+  .container .freeship {
+    background: url(../images/methood.png) no-repeat scroll 34px 23px;
+    padding: 0px 0px 30px 127px;
+  }
+
+  .container .Support {
+    background: url(../images/methood.png) no-repeat scroll 35px -124px;
+    padding: 0px 0px 30px 127px;
+  }
+
+  .container .Money {
+    background: url(../images/methood.png) no-repeat scroll 30px -263px;
+    padding: 0px 0px 30px 127px;
+  }
+  .footer__bottom .container .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*Máy tính bảng chiều ngang*/
+@media all and (min-width: 481px) and (max-width: 600px) {
+  .header__top .header__top--right .top__right--search {
+    display: none;
+  }
+  .main__Shopping--product {
+    left: -24%;
+  }
+  .main .main__services .main__services--MASSAGE h4 {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #000000;
+  }
+  .main .main__services .row .main__services--MASSAGE button {
+    font-size: 13px;
+  }
+  .main .main__title h1 {
+    font-size: 21px;
+  }
+  .main .main__title h5 {
+    font-size: 12px;
+  }
+  .main-method .container .row {
+    flex-direction: column;
+  }
+  .main-method .container .row .col-lg-4 {
+    width: 91%;
+  }
+
+  .main .main__best-seller .container > ul > li:nth-child(3),
+  .main .main__best-seller .container > ul > li:nth-child(4),
+  .main .main__best-seller .container > ul > li:nth-child(5) {
+    display: none;
+  }
+
+  .main__the-bolg .row {
+    flex-direction: column;
+  }
+
+  .main__the-bolg .row .col {
+    margin-top: 0;
+  }
+
+  .main .main__services .row {
+    flex-direction: column;
+  }
+
+  .main .main__services .main__services--MASSAGE {
+    margin-bottom: 20px;
+  }
+
+  .footer .footer__top {
+    padding: 0;
+  }
+
+  .footer .footer__top .container .col p {
+    padding-bottom: 11px;
+    margin-top: 26px;
+  }
+
+  .footer__nav {
+    text-align: left;
+  }
+}
+
+/*Máy tính bảng loại to chiều ngang*/
+@media all and (min-width: 601px) and (max-width: 768px) {
+  .preloader {
+    top: 28%;
+    right: 37%;
+  }
+
+  .main .main__title h1 {
+    font-size: 24px;
+  }
+
+  .button-view {
+    margin-left: 0;
+  }
+
+  .button-view {
+    width: 100%;
+    padding: 48px 161px;
+    margin: 0;
+  }
+
+  .button-view button {
+    margin: 0;
+  }
+
+  .header__top .header__top--right {
+    float: right;
+    max-width: 52%;
+  }
+  .main-method .container .row {
+    flex-direction: column;
+  }
+
+  .main-method .container .row .col-lg-4 {
+    overflow: hidden;
+    width: 94%;
+  }
+
+  .main__Shopping--product {
+    left: 18%;
+  }
+
+  .main .main__best-seller .container > ul {
+    flex-wrap: nowrap;
+  }
+
+  .main .main__services .main__services--MASSAGE h4 {
+    font-size: 16px;
+  }
+
+  .footer .footer__top {
+    padding: 58px 49px;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+  .back-to-top {
+    left: 75%;
+    right: 0;
+  }
+
+  .preloader {
+    top: 45%;
+    right: 33%;
+  }
+
+  .main__the-bolg .row {
+    flex-direction: column;
+  }
+}
+
+/*Màn hình máy tính nhỏ chiều ngang*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
   .main__Shopping--product {
     margin-left: -14%;
   }
@@ -251,163 +495,13 @@
   }
 
   .back-to-top {
-    left: 58%;
+    left: 80%;
+    /* top: 80%; */
     right: 0;
   }
 
   .preloader {
-    top: 45%;
+    top: 50%;
     right: 33%;
-  }
-}
-
-/*Màn hình di động*/
-
-@media all and (max-width: 767px) {
-  .preloader {
-    top: 28%;
-    right: 37%;
-  }
-
-  .main .main__title h1 {
-    font-size: 34px;
-  }
-
-  .button-view {
-    margin-left: 0;
-  }
-
-  .button-view {
-    width: 100%;
-    padding: 40px 260px;
-    margin: 0;
-  }
-
-  .button-view button {
-    margin: 0;
-  }
-
-  .main-method .container .row {
-    flex-direction: column;
-  }
-
-  .main-method .container .row .col-lg-4 {
-    overflow: hidden;
-    width: 94%;
-  }
-
-  .main .main__best-seller .container > ul {
-    flex-wrap: nowrap;
-  }
-
-  .footer .footer__top {
-    padding: 58px 49px;
-  }
-
-  .footer__nav {
-    width: 100%;
-  }
-
-  .back-to-top {
-    left: 58%;
-    right: 0;
-  }
-
-  .preloader {
-    top: 45%;
-    right: 33%;
-  }
-
-  .main__the-bolg .row{
-    flex-direction: column;
-  }
-
- 
-}
-
-/* @media all and (max-width: 617px){
-  .main .main__title h1{
-    font-size: 20px;
-  }
-  
-  .main .main__services .row{
-    flex-direction: column;
-  }
-
-  .main .main__services .main__services--MASSAGE{
-    margin: 20px 0px;
-  }
-
-  .button-view{
-    padding: 40px 199px;
-  }
-} */
-
-@media all and (min-width: 360px) and (max-width: 640px) {
-  .header__top a span {
-    display: none;
-  }
-
-  .header__top .header__top--left {
-    max-width: 48%;
-  }
-
-  .header__top .header__top--right {
-    max-width: 39%;
-  }
-
-  .header__main .header__main--Shopping-Cart {
-    display: block;
-  }
-
-  .main__Shopping--text {
-    display: none;
-  }
-
-  .main .main__title {
-    margin: 0;
-  }
-
-  .main .main__services .row {
-    flex-wrap: wrap;
-  }
-  .button-view {
-    width: 100%;
-    padding: 29px 77px;
-    margin: 0;
-  }
-
-  .button-view button {
-    margin: 0;
-    padding: 1px 82px;
-  }
-
-  .main-method .container .row .col-lg-4 {
-    margin-left: 9px;
-  }
-
-  .main .main__best-seller .container > ul {
-    flex-wrap: wrap;
-  }
-
-  .main .main__title{
-    margin: 94px 10px;
-  }
-
-  .footer .footer__top{
-    padding: 60px 0px;
-    font-size: 10px;
-  
-  }
-
-  .footer__bottom .container .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .back-to-top {
-    left: 23%;
-    right: 0;
   }
 }
