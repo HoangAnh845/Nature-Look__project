@@ -20,6 +20,10 @@
   
 }
 
+.preloader img{
+  width: 20%;
+}
+
 .nav-inner .navbar-header{
   display: none;
 }
@@ -655,7 +659,7 @@
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
 }
-/*  */
+/* Begin .main__list-product */
 .product .product-button {
   width: 100%;
   position: absolute;
@@ -734,9 +738,10 @@
 .button-view {
   display: inline-block;
   border: none;
-  margin-left: 465px;
-  margin-bottom: 45px;
-  margin-top: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
 }
 .button-view button {
   padding: 15px 50px;
@@ -1198,17 +1203,13 @@
 /* end footer__top */
 
 .footer__bottom{
-  margin: 95px 0px;
+  margin: 55px 0px;
 }
 
-/* .footer__bottom .container {
-  width: 1200px;
-  margin: 28px 160px;
-} */
-.footer__bottom .container .row .col {
-  width: 300px;
-  margin-bottom: 40px;
+.footer__bottom .row .col {
+  padding: 15px 7px;
 }
+
 .footer__bottom .container .row .col .map,
 .footer__bottom .container .row .col .phone {
   display: block;
@@ -1271,8 +1272,8 @@
 .back-to-top{
   background: url(../images/scroll.png) no-repeat;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 7%;
+  right: 5%;
   z-index: 9999;
   width: 60px;
   height: 60px;

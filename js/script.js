@@ -4,7 +4,7 @@ $(document).ready(function () {
   if($('.loader').length){
     // $(".loader").css("opacity", "0");
       setTimeout(function(){
-        $(".loader").css("opacity", "0");
+        $(".loader").css("display", "none");
       },1500)
   }
 
@@ -102,8 +102,8 @@ $(document).ready(function () {
     navText: ["<div></div>", " <div></div>"],
     responsiveClass: true,
     responsive: {
-      0: {
-        items: 2,
+      200: {
+        items: 1,
         nav: true,
       },
       600: {
